@@ -1,0 +1,108 @@
+@font-face {
+  font-family: Orbitron-Regular;
+  src: url(./assets/fonts/Orbitron-Regular.ttf);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Orbitron-Regular;
+  letter-spacing: 5px;
+  transition: all 0.3s ease;
+}
+#wrapper.dark {
+  background-color: #24292d;
+}
+#wrapper.dark .container {
+  background-color: #323840;
+}
+#wrapper.dark .box {
+  background-color: #24292d;
+}
+#wrapper.dark .box {
+  background-color: #24292d;
+  color: #fff;
+}
+#wrapper.dark #indicators,
+#wrapper.dark .colonBox {
+  color: #fff;
+}
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f8ff;
+  border-radius: 10px;
+  margin: 10px 20px;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.container-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f8ff;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 60px;
+  margin: 20px;
+  background-color: #ffff;
+  border-radius: 15px;
+  position: relative;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+span {
+  display: block;
+  font-size: 45px;
+  font-weight: 600;
+}
+h5 {
+  text-align: center;
+  font-size: 16px;
+}
+h2 {
+  font-size: 80px;
+}
+button {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 25px;
+  border-radius: 100%;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+button:hover{
+    transform: scale(1.1);
+}
+@media screen and (max-width: 786px) {
+  .container {
+    padding: 30px;
+  }
+  span {
+    font-size: 35px;
+  }
+  .container {
+    flex-direction: column;
+  }
+  h2 {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .container {
+    padding: 30px;
+  }
+  span {
+    font-size: 30px;
+  }
+}
