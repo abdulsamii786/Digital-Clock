@@ -47,7 +47,7 @@ function darkMode() {
   if (isDark) {
     wrapper.classList.add("dark");
     iconId.className = "fa-regular fa-sun";
-iconId.style.opacity
+    iconId.style.opacity;
     iconId.style.color = "#fff";
   } else {
     wrapper.classList.remove("dark");
@@ -55,3 +55,10 @@ iconId.style.opacity
     iconId.style.color = "#000";
   }
 }
+
+let yearId = document.getElementById("year");
+let d = new Date().getFullYear();
+function years() {
+  yearId.innerText = d;
+}
+years();
